@@ -1,0 +1,14 @@
+version: '3'
+services:
+   c_test:
+    image: shuimengzhi/shuimengzhi/c_development_environment:2.0
+    container_name: c_test
+    environment:
+    - TZ=Asia/Shanghai
+    volumes:
+    - ../:/project
+    security_opt:
+     - seccomp:unconfined
+    cap_add:
+     - SYS_PTRACE
+
