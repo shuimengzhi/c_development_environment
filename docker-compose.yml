@@ -1,8 +1,8 @@
 version: '3'
 services:
-   c_test:
-    image: shuimengzhi/shuimengzhi/c_development_environment:2.0
-    container_name: c_test
+   assembler:
+    image: shuimengzhi/assembler_environment:1.0
+    container_name: assembler
     environment:
     - TZ=Asia/Shanghai
     volumes:
